@@ -1,0 +1,77 @@
+:root {
+    --theme-bg-color: rgba(0, 0, 0, );
+    --border-color: rgba(0, 0, 0, );
+    --theme-color: #f9fafb;
+    --inactive-color: #000;
+    --body-font: "Poppins", sans-serif;
+    --hover-menu-bg: rgba(0, 0, 0, );
+    --content-title-color: #999ba5;
+    --content-bg: #000;
+    --button-inactive: #000;
+    --dropdown-bg: #21242d;
+    --dropdown-hover: #000;
+    --popup-bg: #000;
+    --search-bg: #14162b;
+    --overlay-bg: rgba(36, 39, 59, 0.3);
+    --scrollbar-bg: #000;
+}
+.light-mode {
+    --theme-bg-color: #000;
+    --theme-color: #3c3a3a;
+    --inactive-color: #333;
+    --button-inactive: #3c3a3a;
+    --search-bg: #000;
+    --dropdown-bg: #f7f7f7;
+    --overlay-bg: #000;
+    --dropdown-hover: #000;
+    --border-color: #000;
+    --popup-bg: #000;
+    --hover-menu-bg: rgba(0, 0, 0, );
+    --scrollbar-bg: #000;
+    --content-title-color: --theme-color;
+}
+html {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+body {
+    font-family: var(--body-font);
+    background-image: url(https://wallpapershome.com/images/wallpapers/macos-big-sur-1280x720-dark-wwdc-2020-22655.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2em;
+    width: 100%;
+    height: 100vh;
+}
+@media screen and (max-width: 480px) {
+    body {
+        padding: 0.8em;
+   }
+}
+.video-bg {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.video-bg video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.dark-light {
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    background-color: var(--dropdown-bg);
+    box-shadow: -1px 3px 8px -1px rgba(0, 0, 0, 0.2);
+    padding: 8px;
+    border-radius: 50%;
+    z-index: 3;
+    cursor: pointer;
+}
